@@ -92,9 +92,9 @@ for (let i = 0; i < accordionHeaders.length; i++) {
 }
 
   
-<a> href = "file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/sports.html"Sports Project</a>
 
-<a> href = "file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/exam.html"Grocery List Project</a>
-  
+<a> href = "http:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/sports.html"Sports Project</a>
+
+<a> href = "http:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/exam.html"Grocery List Project</a>
   
 </script>
