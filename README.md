@@ -1,4 +1,3 @@
-## Joshua Robinson
 <style>
 
 .accordion {
