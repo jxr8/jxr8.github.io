@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Final Project: CSIT 281 - JavaScript</title>
+</head>
+<body>
+
+<script type="text/javascript">
+// Array that will contain the grocery items.
+let groceryList = [];
+
+
+// While loop that loops and asks the user for grocery items until they enter 'done'
+while(groceryList !== 'done'){
+let groceryItem = prompt("Enter a grocery item to add it to the list. Type 'done' when finished.");
+
+// If statement determining if 'done' is input
+if(groceryItem === 'done'){
+  break;
+}
+else{
+  groceryList.push(groceryItem);
+  console.log(groceryList);
+}
+
+}
+
+// Output section that displays final results to page.
+document.write('Your grocery list is as follows: ');
+for(let n = 0; n < groceryList.length; n++){
+  document.write(groceryList[n] + ' ');
+}
+
+
+
+
+</script>
+
+</body>
+</html>
