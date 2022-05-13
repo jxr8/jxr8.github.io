@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sports by Joshua Robinson</title>
+
+
+<style>
+
+body {
+  background-color: #E81828;
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #FFF;
+}
+
+ h1 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p, form, input, select {
+  font-size: 1.25rem;
+}
+
+hr {
+  outline: none;
+  border: none;
+  height: 1px;
+  background-color: #FFF;
+  margin: 24px 0px;
+}
+
+figure {
+  margin: 24px 0px 48px;
+}
+
+img {
+  margin: 0px 0px 8px;
+  width: 100%;
+  max-width: 100%;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1>Sports</h1>
+
+<p>This is interactive webpage that changes the content based on the sport that
+  is selected using the following dropdown.</p>
+
+<form>
+
+Select your favorite sport to change the website theme:
+
+<select id="background" onchange="sportSelector(this)">
+  <option value="baseball">Baseball</option>
+  <option value="basketball">Basketball</option>
+  <option value="football">Football</option>
+  <option value="hockey">Hockey</option>
+
+</select>
+
+</form>
+
+<hr>
+
+<h2 id="sport-title">Baseball</h2>
+
+<p id="sport-description">Baseball is a bat-and-ball
+  game played between two opposing teams, of nine players each, that take turns
+  batting and fielding. My favorite team is the Philadelphia Phillies.</p>
+
+<figure>
+  <img width="500" id="sport-image" src="./images/sports/baseball.jpg" />
+  <figcaption id="sport-image-caption">Photo by <a href="https://unsplash.com/@cgbriggs19">Chris Briggs</a> on <a href="https://unsplash.com/s/photos/baseball">Unsplash</a></figcaption>
+</figure>
+
+
+<script>
+
+
+function sportSelector(selectElem) {
+  var i = selectElem.selectedIndex;
+  if (i < 0) {
+    return;
+  }
+
+  var optionValue = selectElem.options[i].value;
+
+  if (optionValue === "baseball") {
+    document.body.style.backgroundColor = "#E81828";
+    document.getElementById("sport-title").innerHTML = "Baseball";
+    document.getElementById("sport-description").innerHTML = "Baseball is a bat-and-ball game played between two opposing teams, of nine players each, that take turns batting and fielding. My favorite team is the Philadelphia Phillies.";
+    document.getElementById("sport-image").src="./images/sports/baseball.jpg";
+    document.getElementById("sport-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@cgbriggs19">Chris Briggs</a> on <a href="https://unsplash.com/s/photos/baseball">Unsplash</a></figcaption>';
+  }
+  else if (optionValue === "basketball") {
+    document.body.style.backgroundColor = "#552583";
+    document.getElementById("sport-title").innerHTML = "Basketball";
+    document.getElementById("sport-description").innerHTML = "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball through the defender's hoop. My favorite team is the Los Angeles Lakers.";
+    document.getElementById("sport-image").src="./images/sports/basketball.jpg";
+    document.getElementById("sport-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@17thcw">Bailey Burton</a> on <a href="https://unsplash.com/s/photos/basketball">Unsplash</a></figcaption>';
+  }
+  else if (optionValue === "football") {
+    document.body.style.backgroundColor = "#5A1414";
+    document.getElementById("sport-title").innerHTML = "Football";
+    document.getElementById("sport-description").innerHTML = "American football, referred to simply as football in the United States and Canada, and also known as gridiron, is a team sport played by two teams of eleven players on a rectangular field with goalposts at each end. My favorite team is the Washington Commanders.";
+    document.getElementById("sport-image").src="./images/sports/football.jpg";
+    document.getElementById("sport-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@aussiedave">Dave Adamson</a> on <a href="https://unsplash.com/s/photos/american-football">Unsplash</a></figcaption>';
+  }
+  else if (optionValue === "hockey") {
+    document.body.style.backgroundColor = "#041E42";
+    document.getElementById("sport-title").innerHTML = "Hockey";
+    document.getElementById("sport-description").innerHTML = "The National Hockey League is a professional ice hockey league in North America comprising 32 teams—25 in the United States and 7 in Canada. My favorite team is the Washington Capitals.";
+    document.getElementById("sport-image").src="./images/sports/hockey.jpg";
+    document.getElementById("sport-image-caption").innerHTML = 'Photo by <a href="https://unsplash.com/@markusspiske">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/hockey">Unsplash</a></figcaption>';
+  }
+  else {
+    document.write("Something went wrong. Please refresh.");
+  }
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
