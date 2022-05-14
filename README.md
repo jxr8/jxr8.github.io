@@ -37,10 +37,10 @@
 </style>
 
 
-<a>"https://github.com/jxr8/jxr8.github.io"Joshua Robinson GitHub</a>
+<a href=https://github.com/jxr8/jxr8.github.io>Joshua Robinson GitHub</a>
 
-<a>"file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/exam.html"Grocery List Project</a>
-<a>"file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/sports.html"Sports Project</a>
+<a href=file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/exam.html>Grocery List Project</a>
+<a href=file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/sports.html>Sports Project</a>
 
 
 <section id="education">
