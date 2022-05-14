@@ -38,8 +38,8 @@
 
 
 
-<a href="file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/exam.html">Grocery List Project</a>
 <a href="file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/sports.html">Sports Project</a>
+<a href="file:///Users/joshuarobinson/Desktop/JavaScript/CSIT281-JavaScript/exam.html">Grocery List Project</a>
 
 
 <section id="education">
