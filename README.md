@@ -37,7 +37,7 @@
 </style>
 
 
-
+<a> href = "https://github.com/jxr8/jxr8.github.io"Joshua Robinson GitHub</a>
 
 
 <section id="education">
@@ -93,7 +93,5 @@ for (let i = 0; i < accordionHeaders.length; i++) {
 
   
 
-
-<a> href = "https://github.com/jxr8/jxr8.github.io"Joshua Robinson GitHub</a>
   
 </script>
